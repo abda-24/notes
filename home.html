@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="bg-body-secondary" onload="Welcome()">
+
+  <div class="container mt-5">
+    <button class="btn btn-primary position-absolute top-0 end-0  m-3">
+       <a href="login.html" class="text-white text-decoration-none">LogOut</a>
+    </button>
+    <h2 id="hello" class="text-center">Hello Basil</h2>
+    <textarea class="form-control w-50 m-auto" placeholder="What is in your mind" id="postContent"></textarea>
+    <div class="d-flex justify-content-center mt-3">
+      <button class="btn btn-success d-block" id="addButton" onclick="createPost()">Post</button>
+      <button class="btn btn-warning d-none" id="updateButton" onclick="updatePost()">Update</button>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="cards d-flex flex-column align-items-center" id="posts">
+
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
